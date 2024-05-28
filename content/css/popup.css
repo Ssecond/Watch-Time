@@ -1,0 +1,22 @@
+body {
+    width: 200px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+h3 {
+    text-align: center;
+    margin: 0;
+}
+h4 {
+    text-align: center;
+    margin: 1vh 0 1vh 0;
+}
+#start-button {
+    width: 100%;
+    padding: 0 1vw 0 1vw;
+}
+#result {
+    padding-bottom: 1vh;
+    font-size: large;
+}

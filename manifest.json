@@ -1,0 +1,32 @@
+{
+   "version": "0.0.1",
+   "manifest_version": 3,
+   "name": "Watch Time",
+   "author": "Ssecond",
+   "description": "Count time you need to spend to watch a YouTube playlist.",
+   "permissions": [
+      "activeTab",
+      "scripting"
+   ],
+   "action": {
+      "default_popup": "content/html/popup.html",
+      "default_icon": {
+         "16": "icons/default.png",
+         "48": "icons/default.png",
+         "128": "icons/default.png"
+      }
+   },
+   "content_scripts": [
+      {
+         "js": [
+            "content/js/watch-time-count.js"
+         ],
+         "matches": [
+            "*://*.youtube.com/*"
+         ]
+      }
+   ],
+   "background": {
+      "service_worker": "content/js/background.js"
+   }
+}
